@@ -6,26 +6,25 @@ An enterprise-grade analytics pipeline that models over 500,000 transaction reco
 
 ## 🏗️ System Architecture & Data Pipeline
 
-
+```text
 [Synthetic Generation / Source Logs]
-│
-▼
+                │
+                ▼
 [Python Ingestion Engine (psycopg3 / chunked bulk loads)]
-│
-▼
+                │
+                ▼
 [PostgreSQL Relational Warehouse (ecommerce_db)]
-├── Monthly Cohort Matrix (DATE_TRUNC, self-joins)
-├── RFM Behavioral Scoring (NTILE quintiles)
-└── Purchase Velocity Engine (LAG window functions)
-│
-▼
+   ├── Monthly Cohort Matrix (DATE_TRUNC, self-joins)
+   ├── RFM Behavioral Scoring (NTILE quintiles)
+   └── Purchase Velocity Engine (LAG window functions)
+                │
+                ▼
 [Jupyter Analytics & Visual Reporting]
-├── cohort_retention_heatmap.png
-├── rfm_segment_distribution.png
-├── rfm_scatter_distribution.png
-└── rfm_velocity_retention_risk.png
-
-
+   ├── cohort_retention_heatmap.png
+   ├── rfm_segment_distribution.png
+   ├── rfm_scatter_distribution.png
+   └── rfm_velocity_retention_risk.png
+```
 ---
 
 ## 📈 Strategic Insights & Key Deliverables
@@ -91,5 +90,6 @@ Combines RFM segment tiers with individual purchase velocity intervals to identi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Sameer-khan-27/ecommerce-retention-analytics.git
-cd ecommerce-retention-analytics
+   git clone [https://github.com/Sameer-khan-27/ecommerce-retention-analytics.git](https://github.com/Sameer-khan-27/ecommerce-retention-analytics.git)
+   cd ecommerce-retention-analytics
+   ```
