@@ -1,0 +1,19 @@
+# Python temporary files and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Large data dumps (prevents uploading huge files to GitHub)
+data/*.csv
+data/*.xlsx
+data/*.parquet
+
+# Operating system junk files
+.DS_Store
+Thumbs.db
